@@ -1,0 +1,740 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta http-equiv="Cache-Control" content="no-cache">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300..800&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#1b448a",
+                        "tertiary-fixed": "#ffe088",
+                        "uga-orange": "#F0531C",
+                        "surface-tint": "#385da3",
+                        "inverse-surface": "#303031",
+                        "on-primary-fixed": "#001a43",
+                        "inverse-primary": "#aec6ff",
+                        "primary-fixed-dim": "#aec6ff",
+                        "on-surface-variant": "#434751",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#7ea1ec",
+                        "on-secondary-fixed": "#3a0a00",
+                        "on-background": "#1b1c1c",
+                        "secondary-fixed": "#ffdbd0",
+                        "tertiary": "#735c00",
+                        "dark-charcoal": "#1A1A1A",
+                        "surface": "#fbf9f9",
+                        "secondary": "#ae3200",
+                        "secondary-fixed-dim": "#ffb59e",
+                        "surface-bright": "#fbf9f9",
+                        "tertiary-container": "#cca72f",
+                        "surface-container-high": "#e9e8e7",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-container": "#571400",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "primary-container": "#00357a",
+                        "outline-variant": "#c3c6d2",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-secondary-fixed-variant": "#852400",
+                        "surface-dim": "#dbdad9",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#ff5d27",
+                        "outline": "#747782",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#241a00",
+                        "surface-variant": "#e4e2e2",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#002150",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "uga-blue": "#00357A",
+                        "background": "#fbf9f9",
+                        "on-tertiary-container": "#4e3d00",
+                        "uga-gold": "#D4AF37",
+                        "primary-fixed": "#d8e2ff",
+                        "bg-light": "#F8F9FA",
+                        "surface-container": "#efeded",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-highest": "#e4e2e2"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-desktop": "48px",
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "section-gap": "80px"
+                    },
+                    fontFamily: {
+                        "sans": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Lora", "serif"],
+                        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-sm": ["Lora", "serif"],
+                        "headline-md": ["Lora", "serif"],
+                        "headline-lg": ["Lora", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-xl": ["Lora", "serif"],
+                        "headline-lg-mobile": ["Lora", "serif"],
+                        "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    fontSize: {
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    }catch(_e){}</script><style>
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scroll Triggered Animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pop-in, .scroll-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+</style></head><body class="bg-surface text-on-background selection:bg-uga-orange/30 font-sans">
+
+  <!-- Page Transition Overlay -->
+  <div id="page-transition-overlay" class="fixed inset-0 bg-surface dark:bg-dark-charcoal z-[9999] pointer-events-none transition-opacity duration-300 opacity-100"></div>
+  <script>
+    // Start page fade-in as early as possible
+    (function() {
+      function fadeOut() {
+        const overlay = document.getElementById('page-transition-overlay');
+        if (overlay) {
+          overlay.classList.remove('opacity-100');
+          overlay.classList.add('opacity-0');
+          setTimeout(() => {
+            if (overlay.parentNode) {
+              overlay.remove();
+            }
+          }, 300);
+        }
+      }
+      window.addEventListener('load', fadeOut);
+      document.addEventListener('DOMContentLoaded', fadeOut);
+      window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+          fadeOut();
+        }
+      });
+      // Fallback
+      setTimeout(fadeOut, 500);
+    })();
+  </script>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 backdrop-blur-md bg-surface/90 dark:bg-dark-charcoal/90 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<a class="flex flex-col group shrink-0" href="index.html">
+  <span class="text-xl sm:text-2xl lg:text-headline-md font-bold text-uga-blue dark:text-inverse-primary tracking-tighter leading-none group-hover:text-uga-orange transition-colors duration-200">HKUGACAA</span>
+  <span class="text-[9px] sm:text-[10px] text-on-surface-variant/80 dark:text-surface-variant/85 tracking-wide leading-none mt-1 sm:mt-1.5 !font-['Lora',_'Times_New_Roman',_serif] font-bold">港大同學會書院校友會</span>
+</a>
+<nav class="hidden lg:flex items-center lg:gap-5 xl:gap-8 font-label-md text-label-md h-full">
+  <a class="text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none" href="index.html">Home</a>
+  
+  <!-- About Us Dropdown -->
+  <div class="relative group h-full flex items-center">
+    <button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none">
+      <span>About Us</span>
+      <span class="text-[8px] select-none transition-transform duration-200 group-hover:rotate-180">▼</span>
+    </button>
+    <div class="absolute left-0 top-full mt-0 w-64 rounded-xl bg-white/95 dark:bg-dark-charcoal/95 backdrop-blur-md shadow-xl border border-outline-variant/30 py-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="preface.html">Preface</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="executive-committee.html">Executive Committee</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="membership.html">Membership</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="year-plan.html">Year Plan and Budget Plan</a>
+    </div>
+  </div>
+
+  <a class="text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none" href="index.html#whats-new">Latest Updates</a>
+
+  <!-- Events Dropdown -->
+  <div class="relative group h-full flex items-center">
+    <button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none">
+      <span>Events</span>
+      <span class="text-[8px] select-none transition-transform duration-200 group-hover:rotate-180">▼</span>
+    </button>
+    <div class="absolute left-0 top-full mt-0 w-64 rounded-xl bg-white/95 dark:bg-dark-charcoal/95 backdrop-blur-md shadow-xl border border-outline-variant/30 py-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#events">Alumni Day</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#events">20th Anniversary Open Day</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="agm.html">12th AGM Meeting</a>
+    </div>
+  </div>
+
+  <!-- Initiatives Dropdown -->
+  <div class="relative group h-full flex items-center">
+    <button class="flex items-center gap-1 text-uga-orange font-bold transition-colors duration-200 py-2 focus:outline-none">
+      <span>Initiatives</span>
+      <span class="text-[8px] select-none transition-transform duration-200 group-hover:rotate-180">▼</span>
+    </button>
+    <div class="absolute left-0 top-full mt-0 w-64 rounded-xl bg-white/95 dark:bg-dark-charcoal/95 backdrop-blur-md shadow-xl border border-outline-variant/30 py-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#about">Sharing Platform</a>
+      <a class="block px-5 py-2.5 text-sm text-uga-orange font-bold hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="tutoring-network.html">Tutoring Network</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="https://forms.gle/YvWdpVqEfLssw332A" target="_blank" rel="noopener">Visiting Alumni</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#about">Special School Program</a>
+    </div>
+  </div>
+
+  <a class="text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none" href="index.html#contact">Contact Us</a>
+</nav>
+<div class="flex items-center gap-3 sm:gap-6 shrink-0">
+<button class="material-symbols-outlined text-uga-blue dark:text-inverse-primary hover:text-uga-orange transition-colors">search</button>
+<a href="membership.html" class="bg-uga-blue text-white px-4 py-1.5 sm:px-6 sm:py-2 rounded-full font-label-md hover:bg-uga-orange hover:shadow-lg transition-all duration-300 text-xs sm:text-sm md:text-[14px]">Join Us</a>
+<button id="mobile-menu-btn" class="lg:hidden text-uga-blue hover:text-uga-orange transition-colors">
+  <span class="material-symbols-outlined text-[28px] !block">menu</span>
+</button>
+</div>
+</div>
+</header>
+
+<!-- Mobile Menu Drawer Overlay -->
+<div id="mobile-menu-drawer" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="fixed top-0 right-0 h-full w-[80%] max-w-[360px] bg-surface shadow-2xl p-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex justify-between items-center mb-8">
+        <div class="font-headline-md text-headline-md font-bold text-uga-blue">
+          HKUGACAA
+          <div class="text-xs text-on-surface-variant/80 opacity-85 tracking-tight !font-['Lora',_'Times_New_Roman',_serif] font-bold">港大同學會書院校友會</div>
+        </div>
+        <button id="mobile-menu-close" class="text-on-surface-variant hover:text-uga-orange transition-colors">
+          <span class="material-symbols-outlined text-[28px] !block">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-5 max-h-[60vh] overflow-y-auto pr-2">
+        <a class="text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg" href="index.html">Home</a>
+        
+        <!-- About Us Collapsible -->
+        <details class="group select-none">
+          <summary class="flex justify-between items-center text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg cursor-pointer list-none">
+            <span>About Us</span>
+            <span class="text-[10px] transition-transform duration-200 group-open:rotate-180">▼</span>
+          </summary>
+          <div class="mt-3 ml-3 flex flex-col gap-3.5 border-l border-outline-variant/40 pl-4 py-1 text-base">
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="preface.html">Preface</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="executive-committee.html">Executive Committee</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="membership.html">Membership</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="year-plan.html">Year Plan and Budget Plan</a>
+          </div>
+        </details>
+
+        <a class="text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg" href="index.html#whats-new">Latest Updates</a>
+
+        <!-- Events Collapsible -->
+        <details class="group select-none">
+          <summary class="flex justify-between items-center text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg cursor-pointer list-none">
+            <span>Events</span>
+            <span class="text-[10px] transition-transform duration-200 group-open:rotate-180">▼</span>
+          </summary>
+          <div class="mt-3 ml-3 flex flex-col gap-3.5 border-l border-outline-variant/40 pl-4 py-1 text-base">
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#events">Alumni Day</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#events">20th Anniversary Open Day</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="agm.html">12th AGM Meeting</a>
+          </div>
+        </details>
+
+        <!-- Initiatives Collapsible -->
+        <details class="group select-none" open>
+          <summary class="flex justify-between items-center text-uga-orange font-bold font-label-md text-lg cursor-pointer list-none">
+            <span>Initiatives</span>
+            <span class="text-[10px] transition-transform duration-200 group-open:rotate-180">▼</span>
+          </summary>
+          <div class="mt-3 ml-3 flex flex-col gap-3.5 border-l border-outline-variant/40 pl-4 py-1 text-base">
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#about">Sharing Platform</a>
+            <a class="text-uga-orange font-bold hover:text-uga-orange transition-colors" href="tutoring-network.html">Tutoring Network</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="https://forms.gle/YvWdpVqEfLssw332A" target="_blank" rel="noopener">Visiting Alumni</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#about">Special School Program</a>
+          </div>
+        </details>
+
+        <a class="text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg" href="index.html#contact">Contact Us</a>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-4">
+      <a href="membership.html" class="block text-center bg-uga-blue text-white py-3 rounded-full hover:bg-uga-orange hover:shadow-lg transition-all font-label-md">Join Us</a>
+      <div class="text-xs text-on-surface-variant/60 text-center font-sans">
+        © 2024 HKUGA College Alumni Association
+      </div>
+    </div>
+  </div>
+</div>
+<main class="pt-32 pb-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-8 text-on-surface-variant font-label-sm text-label-sm scroll-reveal">
+<span class="">Home</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="">Initiatives</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-uga-blue font-bold">Tutoring Network</span>
+</nav>
+<!-- Hero Section / Heading -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end mb-16 scroll-reveal">
+<div class="lg:col-span-8">
+<h1 class="font-headline-xl text-3xl sm:text-4xl md:text-headline-xl text-uga-blue tracking-tight leading-none mb-4 lg:text-[64px]">
+                    Tutoring Network
+                </h1>
+<div class="editorial-rule w-32 mb-8"></div>
+</div>
+<div class="lg:col-span-4 hidden lg:block">
+</div>
+</div>
+<!-- Content Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Main Body: Purpose -->
+<article class="lg:col-span-7 space-y-8 scroll-reveal">
+<section>
+<h2 class="font-headline-md text-headline-md text-uga-blue mb-6 flex items-center gap-3">
+<span class="w-1 h-8 bg-uga-orange"></span>
+                        Purpose
+                    </h2>
+<div class="space-y-6 text-on-surface font-body-lg text-body-lg leading-relaxed">
+<p class="">
+                            We're thrilled to announce a meaningful opportunity for our incredible alumni to directly impact and support current students! By joining our <span class="font-bold text-uga-blue">Alumni Tutorial Network</span>, you become a vital bridge, offering your expertise to UGA students and parents seeking private tutoring.
+                        </p>
+<p class="">
+                            This platform makes it easy for them to connect with experienced alumni like you, who have walked the same path and achieved success.
+                        </p>
+<div class="bg-surface-container-low p-8 border-l-4 border-uga-orange rounded-r-lg">
+<p class="font-medium text-uga-blue">
+                                This isn't just about tutoring; it's about <span class="text-uga-orange">giving back</span>, fostering academic excellence, and <span class="text-uga-orange">strengthening the bonds</span> within our UGA family. 
+                            </p>
+</div>
+<p class="">
+                            Your participation provides invaluable guidance, builds confidence in our students, and helps them reach their full potential. Let's connect, learn, and grow together — shaping a brighter future for every UGACes!
+                        </p>
+</div>
+</section>
+</article>
+<!-- Sidebar Actions: Become / Find -->
+<aside class="lg:col-span-5 space-y-8">
+<!-- Action Card: Become a Tutor -->
+<div class="bg-white p-8 rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.05)] border border-surface-variant/30 hover:shadow-[0px_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 group scroll-reveal">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-uga-blue/10 rounded-lg flex items-center justify-center text-uga-blue group-hover:bg-uga-orange group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/50">HKUGAC Alumni</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-uga-blue mb-4">Become a Tutor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Want to inspire the next generation? Join our Tutor Recruitment Network and share your knowledge. Tutor profiles are updated on a monthly basis.
+                    </p>
+<a href="https://forms.gle/U4QqjZcVXsoEvh5MA" target="_blank" rel="noopener" class="w-full bg-uga-blue text-white font-label-md text-label-md py-4 rounded-lg flex items-center justify-center gap-2 group-hover:bg-uga-orange transition-all text-center">
+                        Register as a Tutor
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Action Card: Find a Tutor -->
+<div class="bg-surface-container-highest/30 p-8 rounded-xl border border-uga-blue/10 hover:border-uga-blue/30 transition-all scroll-reveal">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center text-uga-blue">
+<span class="material-symbols-outlined text-[28px]">person_search</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/50">Parents &amp; Students</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-uga-blue mb-4">Find a Tutor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Feeling a bit lost? Get support from an alumni tutor. Access the network using your <span class="font-bold text-uga-blue">@hkugac.edu.hk</span> account.
+                    </p>
+<a href="https://forms.gle/E2jYwKUaAV5oXgig8" target="_blank" rel="noopener" class="w-full border-2 border-uga-blue text-uga-blue hover:bg-uga-blue hover:text-white font-label-md text-label-md py-4 rounded-lg flex items-center justify-center gap-2 transition-all text-center">
+                        Access Network
+                        <span class="material-symbols-outlined">login</span>
+</a>
+</div>
+<!-- Visual Accent Sketch -->
+</aside>
+</div>
+
+<!-- Interactive Tutor Directory Preview Widget -->
+<section class="mt-20 scroll-reveal border-t border-outline-variant/30 pt-16">
+  <div class="mb-10 text-center md:text-left">
+    <h2 class="font-headline-md text-headline-md text-uga-blue">Alumni Tutor Directory Preview</h2>
+    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-2 font-sans">
+      Explore verified alumni tutors from top-tier international and local universities. Use the subject filters to explore specialized educational mentors.
+    </p>
+  </div>
+
+  <!-- Filters -->
+  <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-8" id="tutor-filters">
+    <button onclick="filterTutors('all')" class="filter-btn px-5 py-2.5 rounded-full font-label-md text-sm transition-all bg-uga-blue text-white shadow-sm" data-filter="all">All Subjects</button>
+    <button onclick="filterTutors('Mathematics')" class="filter-btn px-5 py-2.5 rounded-full font-label-md text-sm transition-all bg-white text-on-surface-variant hover:bg-surface-container-high/40 border border-outline-variant/50" data-filter="Mathematics">Mathematics</button>
+    <button onclick="filterTutors('Sciences')" class="filter-btn px-5 py-2.5 rounded-full font-label-md text-sm transition-all bg-white text-on-surface-variant hover:bg-surface-container-high/40 border border-outline-variant/50" data-filter="Sciences">Sciences</button>
+    <button onclick="filterTutors('English')" class="filter-btn px-5 py-2.5 rounded-full font-label-md text-sm transition-all bg-white text-on-surface-variant hover:bg-surface-container-high/40 border border-outline-variant/50" data-filter="English">English &amp; Languages</button>
+  </div>
+
+  <!-- Tutors Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="tutors-grid">
+    <!-- Tutor Card 1 -->
+    <div class="tutor-card bg-white rounded-2xl border border-outline-variant/20 p-6 flex flex-col justify-between hover:shadow-[0px_10px_30px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300" data-subjects="Sciences">
+      <div>
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-12 h-12 rounded-full bg-uga-orange/10 text-uga-orange font-bold text-lg flex items-center justify-center font-sans">SC</div>
+          <span class="bg-emerald-50 text-emerald-700 text-[11px] font-sans font-semibold px-2.5 py-0.5 rounded-full border border-emerald-200">Verified</span>
+        </div>
+        <h4 class="font-headline-sm text-lg text-uga-blue">Sarah Chan</h4>
+        <p class="text-xs text-on-surface-variant/70 font-sans mt-0.5">Class of 2021 · HKU Medicine (MBBS)</p>
+        <p class="text-sm text-on-surface-variant/90 font-sans mt-4 leading-relaxed">
+          Specializes in DSE Biology and Chemistry. Achieved straight 5** in science components with complete self-made study notes.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-outline-variant/10 flex items-center justify-between">
+        <span class="text-xs font-semibold font-sans text-uga-orange uppercase">Sciences</span>
+        <button onclick="openRequestModal('Sarah Chan', 'Biology &amp; Chemistry (DSE)')" class="text-sm font-label-md text-uga-blue hover:text-uga-orange transition-colors flex items-center gap-1">Connect <span class="material-symbols-outlined text-[16px] !block">arrow_forward</span></button>
+      </div>
+    </div>
+
+    <!-- Tutor Card 2 -->
+    <div class="tutor-card bg-white rounded-2xl border border-outline-variant/20 p-6 flex flex-col justify-between hover:shadow-[0px_10px_30px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300" data-subjects="Mathematics">
+      <div>
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-12 h-12 rounded-full bg-uga-blue/10 text-uga-blue font-bold text-lg flex items-center justify-center font-sans">MW</div>
+          <span class="bg-emerald-50 text-emerald-700 text-[11px] font-sans font-semibold px-2.5 py-0.5 rounded-full border border-emerald-200">Verified</span>
+        </div>
+        <h4 class="font-headline-sm text-lg text-uga-blue">Marcus Wong</h4>
+        <p class="text-xs text-on-surface-variant/70 font-sans mt-0.5">Class of 2020 · HKUST Quantitative Finance</p>
+        <p class="text-sm text-on-surface-variant/90 font-sans mt-4 leading-relaxed">
+          Passionate math mentor for DSE core math, M1/M2, and high school calculus. Focuses on exam shortcuts and key patterns.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-outline-variant/10 flex items-center justify-between">
+        <span class="text-xs font-semibold font-sans text-uga-blue uppercase">Mathematics</span>
+        <button onclick="openRequestModal('Marcus Wong', 'Mathematics &amp; M1/M2')" class="text-sm font-label-md text-uga-blue hover:text-uga-orange transition-colors flex items-center gap-1">Connect <span class="material-symbols-outlined text-[16px] !block">arrow_forward</span></button>
+      </div>
+    </div>
+
+    <!-- Tutor Card 3 -->
+    <div class="tutor-card bg-white rounded-2xl border border-outline-variant/20 p-6 flex flex-col justify-between hover:shadow-[0px_10px_30px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300" data-subjects="English">
+      <div>
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-12 h-12 rounded-full bg-uga-gold/10 text-uga-gold font-bold text-lg flex items-center justify-center font-sans">CL</div>
+          <span class="bg-emerald-50 text-emerald-700 text-[11px] font-sans font-semibold px-2.5 py-0.5 rounded-full border border-emerald-200">Verified</span>
+        </div>
+        <h4 class="font-headline-sm text-lg text-uga-blue">Chloe Li</h4>
+        <p class="text-xs text-on-surface-variant/70 font-sans mt-0.5">Class of 2022 · CUHK English Language Education</p>
+        <p class="text-sm text-on-surface-variant/90 font-sans mt-4 leading-relaxed">
+          Covers DSE/IB English Literature, grammar modules, and IELTS Speaking prep. Emphasizes interactive communication.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-outline-variant/10 flex items-center justify-between">
+        <span class="text-xs font-semibold font-sans text-uga-gold uppercase">English</span>
+        <button onclick="openRequestModal('Chloe Li', 'English &amp; Literature')" class="text-sm font-label-md text-uga-blue hover:text-uga-orange transition-colors flex items-center gap-1">Connect <span class="material-symbols-outlined text-[16px] !block">arrow_forward</span></button>
+      </div>
+    </div>
+
+    <!-- Tutor Card 4 -->
+    <div class="tutor-card bg-white rounded-2xl border border-outline-variant/20 p-6 flex flex-col justify-between hover:shadow-[0px_10px_30px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300" data-subjects="Sciences">
+      <div>
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-12 h-12 rounded-full bg-slate-100 text-on-surface font-bold text-lg flex items-center justify-center font-sans">JN</div>
+          <span class="bg-emerald-50 text-emerald-700 text-[11px] font-sans font-semibold px-2.5 py-0.5 rounded-full border border-emerald-200">Verified</span>
+        </div>
+        <h4 class="font-headline-sm text-lg text-uga-blue">Jonathan Ng</h4>
+        <p class="text-xs text-on-surface-variant/70 font-sans mt-0.5">Class of 2019 · Cambridge Engineering Graduate</p>
+        <p class="text-sm text-on-surface-variant/90 font-sans mt-4 leading-relaxed">
+          Experienced tutor in AP/IB/DSE Physics and Advanced Calculus. Specialized in university interview prep and Oxbridge profiles.
+        </p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-outline-variant/10 flex items-center justify-between">
+        <span class="text-xs font-semibold font-sans text-on-surface-variant uppercase">Sciences</span>
+        <button onclick="openRequestModal('Jonathan Ng', 'Physics &amp; Oxbridge Engineering')" class="text-sm font-label-md text-uga-blue hover:text-uga-orange transition-colors flex items-center gap-1">Connect <span class="material-symbols-outlined text-[16px] !block">arrow_forward</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Connection Request Modal -->
+<div id="connection-modal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl max-w-md w-full shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300">
+    <div class="bg-uga-blue p-6 text-white flex justify-between items-center">
+      <div>
+        <h3 class="font-headline-sm text-lg text-white" id="modal-tutor-name">Connect with Sarah Chan</h3>
+        <p class="text-xs text-white/80 font-sans mt-0.5" id="modal-tutor-subjects">Subject: Biology &amp; Chemistry (DSE)</p>
+      </div>
+      <button onclick="closeRequestModal()" class="text-white/80 hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px] !block">close</span>
+      </button>
+    </div>
+    <form onsubmit="submitRequestForm(event)" class="p-6 space-y-4">
+      <div>
+        <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Your Name</label>
+        <input required type="text" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="e.g. David Lau">
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Contact Email</label>
+        <input required type="email" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="e.g. david@example.com">
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Grade / Year</label>
+        <select class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue">
+          <option>Secondary 6 (DSE Class)</option>
+          <option>Secondary 5</option>
+          <option>Secondary 4</option>
+          <option>Junior Secondary (S1-S3)</option>
+          <option>Primary Student (HKUGAPS)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Inquiry / Note</label>
+        <textarea required rows="3" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="Describe your learning requirements or topics..."></textarea>
+      </div>
+      <div class="pt-2 flex gap-3">
+        <button type="button" onclick="closeRequestModal()" class="flex-1 bg-surface-container-high/40 hover:bg-surface-container-high/70 text-on-surface-variant font-label-md py-3 rounded-xl text-sm transition-colors">Cancel</button>
+        <button type="submit" class="flex-1 bg-uga-blue hover:bg-uga-orange text-white font-label-md py-3 rounded-xl text-sm transition-all shadow-md">Send Request</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Global Notification Toast -->
+<div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300 bg-slate-900 text-white px-6 py-4 rounded-xl flex items-center gap-3 shadow-2xl border border-slate-800">
+  <span class="material-symbols-outlined text-emerald-400">check_circle</span>
+  <div>
+    <p class="font-semibold text-sm font-sans" id="toast-title">Request Dispatched</p>
+    <p class="text-xs text-slate-400 font-sans mt-0.5" id="toast-desc">The tutor will contact you directly.</p>
+  </div>
+</div>
+</div>
+</main>
+<!-- Success Stats section for visual density -->
+<section class="bg-uga-blue py-16 text-white overflow-hidden relative scroll-reveal">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="scroll-reveal">
+<div class="font-headline-lg text-headline-lg text-uga-orange">250+</div>
+<div class="font-label-sm text-label-sm opacity-70">Active Tutors</div>
+</div>
+<div class="scroll-reveal" style="transition-delay: 100ms;">
+<div class="font-headline-lg text-headline-lg text-uga-orange">12+</div>
+<div class="font-label-sm text-label-sm opacity-70">Subjects Covered</div>
+</div>
+<div class="scroll-reveal" style="transition-delay: 200ms;">
+<div class="font-headline-lg text-headline-lg text-uga-orange">500+</div>
+<div class="font-label-sm text-label-sm opacity-70">Successful Matches</div>
+</div>
+<div class="scroll-reveal" style="transition-delay: 300ms;">
+<div class="font-headline-lg text-headline-lg text-uga-orange">100%</div>
+<div class="font-label-sm text-label-sm opacity-70">Alumni Verified</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest dark:bg-dark-charcoal border-t border-outline-variant dark:border-outline scroll-reveal">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-headline-sm text-headline-sm font-bold text-uga-blue dark:text-inverse-primary mb-2">
+                HKUGACAA
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant max-w-xs">
+                Connecting and empowering the HKUGA College alumni community worldwide.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8">
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-uga-blue dark:hover:text-tertiary-fixed-dim underline transition-all" href="privacy.html">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-uga-blue dark:hover:text-tertiary-fixed-dim underline transition-all" href="terms.html">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-uga-blue dark:hover:text-tertiary-fixed-dim underline transition-all" href="index.html#contact">Contact Us</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-uga-blue dark:hover:text-tertiary-fixed-dim underline transition-all" href="https://www.hkugac.edu.hk/" target="_blank" rel="noopener">HKUGA College</a>
+</div>
+</div>
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-8 text-center md:text-left">
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant opacity-60">
+            © 2024 HKUGA College Alumni Association. All rights reserved.
+        </p>
+</div>
+</footer>
+<script>
+    // Tutor filtration function
+    function filterTutors(subject) {
+        // Update active filter button style
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            if (btn.getAttribute('data-filter') === subject) {
+                btn.classList.add('bg-uga-blue', 'text-white', 'shadow-sm');
+                btn.classList.remove('bg-white', 'text-on-surface-variant', 'hover:bg-surface-container-high/40', 'border');
+            } else {
+                btn.classList.remove('bg-uga-blue', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-white', 'text-on-surface-variant', 'hover:bg-surface-container-high/40', 'border', 'border-outline-variant/50');
+            }
+        });
+
+        // Toggle tutor cards visibility
+        document.querySelectorAll('.tutor-card').forEach(card => {
+            if (subject === 'all' || card.getAttribute('data-subjects') === subject) {
+                card.style.display = 'flex';
+                card.classList.remove('opacity-40');
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Modal control functions
+    function openRequestModal(tutorName, subjects) {
+        const modal = document.getElementById('connection-modal');
+        const mName = document.getElementById('modal-tutor-name');
+        const mSubj = document.getElementById('modal-tutor-subjects');
+        if (modal && mName && mSubj) {
+            mName.textContent = `Connect with ${tutorName}`;
+            mSubj.textContent = `Specialty: ${subjects}`;
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100');
+            modal.querySelector('div').classList.remove('scale-95');
+            modal.querySelector('div').classList.add('scale-100');
+        }
+    }
+
+    function closeRequestModal() {
+        const modal = document.getElementById('connection-modal');
+        if (modal) {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modal.classList.remove('opacity-100');
+            modal.querySelector('div').classList.add('scale-95');
+            modal.querySelector('div').classList.remove('scale-100');
+        }
+    }
+
+    function submitRequestForm(event) {
+        event.preventDefault();
+        closeRequestModal();
+
+        // Trigger toast
+        const toast = document.getElementById('toast-notification');
+        if (toast) {
+            toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 3000);
+        }
+        event.target.reset();
+    }
+
+    // Mobile Menu Drawer Toggle Logic
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileClose = document.getElementById('mobile-menu-close');
+    const mobileDrawer = document.getElementById('mobile-menu-drawer');
+    const mobileDrawerContainer = mobileDrawer ? mobileDrawer.querySelector('div') : null;
+
+    if (mobileBtn && mobileDrawer && mobileDrawerContainer) {
+        const openMobileMenu = () => {
+            mobileDrawer.classList.remove('pointer-events-none', 'opacity-0');
+            mobileDrawer.classList.add('opacity-100');
+            mobileDrawerContainer.classList.remove('translate-x-full');
+        };
+
+        const closeMobileMenu = () => {
+            mobileDrawer.classList.add('pointer-events-none', 'opacity-0');
+            mobileDrawer.classList.remove('opacity-100');
+            mobileDrawerContainer.classList.add('translate-x-full');
+        };
+
+        mobileBtn.addEventListener('click', openMobileMenu);
+        mobileClose.addEventListener('click', closeMobileMenu);
+        mobileDrawer.addEventListener('click', (e) => {
+            if (e.target === mobileDrawer) closeMobileMenu();
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer for scroll-triggered reveal
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const revealElements = document.querySelectorAll('.scroll-reveal');
+        revealElements.forEach(el => observer.observe(el));
+    });
+
+    // Page fade-out transition on link clicks
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link && link.href) {
+        const currentUrl = new URL(window.location.href);
+        const targetUrl = new URL(link.href, window.location.href);
+        const isInternal = targetUrl.origin === currentUrl.origin;
+        const isSamePageHash = targetUrl.pathname === currentUrl.pathname && link.hash;
+        const isBlank = link.target === '_blank';
+        const isAction = link.href.startsWith('mailto:') || link.href.startsWith('tel:') || link.href.startsWith('javascript:');
+
+        if (isInternal && !isSamePageHash && !isBlank && !isAction) {
+          e.preventDefault();
+          let overlay = document.getElementById('page-transition-overlay');
+          if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'page-transition-overlay';
+            overlay.className = 'fixed inset-0 bg-surface dark:bg-dark-charcoal z-[9999] pointer-events-none transition-opacity duration-300 opacity-0';
+            document.body.appendChild(overlay);
+          }
+          overlay.offsetWidth;
+          overlay.classList.remove('opacity-0');
+          overlay.classList.add('opacity-100');
+          setTimeout(() => {
+            window.location.href = link.href;
+          }, 300);
+        }
+      }
+    });
+</script>
+</body></html>

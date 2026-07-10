@@ -1,0 +1,833 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Membership | HKUGACAA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#1b448a",
+                        "tertiary-fixed": "#ffe088",
+                        "uga-orange": "#F0531C",
+                        "surface-tint": "#385da3",
+                        "inverse-surface": "#303031",
+                        "on-primary-fixed": "#001a43",
+                        "inverse-primary": "#aec6ff",
+                        "primary-fixed-dim": "#aec6ff",
+                        "on-surface-variant": "#434751",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#7ea1ec",
+                        "on-secondary-fixed": "#3a0a00",
+                        "on-background": "#1b1c1c",
+                        "secondary-fixed": "#ffdbd0",
+                        "tertiary": "#735c00",
+                        "dark-charcoal": "#1A1A1A",
+                        "surface": "#fbf9f9",
+                        "secondary": "#ae3200",
+                        "secondary-fixed-dim": "#ffb59e",
+                        "surface-bright": "#fbf9f9",
+                        "tertiary-container": "#cca72f",
+                        "surface-container-high": "#e9e8e7",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-container": "#571400",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "primary-container": "#00357a",
+                        "outline-variant": "#c3c6d2",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-secondary-fixed-variant": "#852400",
+                        "surface-dim": "#dbdad9",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#ff5d27",
+                        "outline": "#747782",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#241a00",
+                        "surface-variant": "#e4e2e2",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#002150",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "uga-blue": "#00357A",
+                        "background": "#fbf9f9",
+                        "on-tertiary-container": "#4e3d00",
+                        "uga-gold": "#D4AF37",
+                        "primary-fixed": "#d8e2ff",
+                        "bg-light": "#F8F9FA",
+                        "surface-container": "#efeded",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-highest": "#e4e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "sans": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Lora", "serif"],
+                        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-sm": ["Lora", "serif"],
+                        "headline-md": ["Lora", "serif"],
+                        "headline-lg": ["Lora", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-xl": ["Lora", "serif"],
+                        "headline-lg-mobile": ["Lora", "serif"],
+                        "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lora', 'Times New Roman', Times, serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glass {
+            backdrop-filter: blur(12px);
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 48px;
+        }
+        @media (max-width: 767.98px) {
+            .asymmetric-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Reveal Animation Styles */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                transition: opacity 0.3s ease-in-out;
+                transform: none !important;
+            }
+            .reveal.active {
+                opacity: 1;
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-uga-orange selection:text-white">
+
+  <!-- Page Transition Overlay -->
+  <div id="page-transition-overlay" class="fixed inset-0 bg-surface dark:bg-dark-charcoal z-[9999] pointer-events-none transition-opacity duration-300 opacity-100"></div>
+  <script>
+    // Start page fade-in as early as possible
+    (function() {
+      function fadeOut() {
+        const overlay = document.getElementById('page-transition-overlay');
+        if (overlay) {
+          overlay.classList.remove('opacity-100');
+          overlay.classList.add('opacity-0');
+          setTimeout(() => {
+            if (overlay.parentNode) {
+              overlay.remove();
+            }
+          }, 300);
+        }
+      }
+      window.addEventListener('load', fadeOut);
+      document.addEventListener('DOMContentLoaded', fadeOut);
+      window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+          fadeOut();
+        }
+      });
+      // Fallback
+      setTimeout(fadeOut, 500);
+    })();
+  </script>
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 backdrop-blur-md bg-surface/90 dark:bg-dark-charcoal/90 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<a class="flex flex-col group shrink-0" href="index.html">
+  <span class="text-xl sm:text-2xl lg:text-headline-md font-bold text-uga-blue dark:text-inverse-primary tracking-tighter leading-none group-hover:text-uga-orange transition-colors duration-200">HKUGACAA</span>
+  <span class="text-[9px] sm:text-[10px] text-on-surface-variant/80 dark:text-surface-variant/85 tracking-wide leading-none mt-1 sm:mt-1.5 !font-['Lora',_'Times_New_Roman',_serif] font-bold">港大同學會書院校友會</span>
+</a>
+<nav class="hidden lg:flex items-center lg:gap-5 xl:gap-8 font-label-md text-label-md h-full">
+  <a class="text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none" href="index.html">Home</a>
+  
+  <!-- About Us Dropdown -->
+  <div class="relative group h-full flex items-center">
+    <button class="flex items-center gap-1 text-uga-orange font-bold transition-colors duration-200 py-2 focus:outline-none">
+      <span>About Us</span>
+      <span class="text-[8px] select-none transition-transform duration-200 group-hover:rotate-180">▼</span>
+    </button>
+    <div class="absolute left-0 top-full mt-0 w-64 rounded-xl bg-white/95 dark:bg-dark-charcoal/95 backdrop-blur-md shadow-xl border border-outline-variant/30 py-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="preface.html">Preface</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="executive-committee.html">Executive Committee</a>
+      <a class="block px-5 py-2.5 text-sm text-uga-orange font-bold hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="membership.html">Membership</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="year-plan.html">Year Plan and Budget Plan</a>
+    </div>
+  </div>
+
+  <a class="text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none" href="index.html#whats-new">Latest Updates</a>
+
+  <!-- Events Dropdown -->
+  <div class="relative group h-full flex items-center">
+    <button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none">
+      <span>Events</span>
+      <span class="text-[8px] select-none transition-transform duration-200 group-hover:rotate-180">▼</span>
+    </button>
+    <div class="absolute left-0 top-full mt-0 w-64 rounded-xl bg-white/95 dark:bg-dark-charcoal/95 backdrop-blur-md shadow-xl border border-outline-variant/30 py-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#events">Alumni Day</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#events">20th Anniversary Open Day</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="agm.html">12th AGM Meeting</a>
+    </div>
+  </div>
+
+  <!-- Initiatives Dropdown -->
+  <div class="relative group h-full flex items-center">
+    <button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none">
+      <span>Initiatives</span>
+      <span class="text-[8px] select-none transition-transform duration-200 group-hover:rotate-180">▼</span>
+    </button>
+    <div class="absolute left-0 top-full mt-0 w-64 rounded-xl bg-white/95 dark:bg-dark-charcoal/95 backdrop-blur-md shadow-xl border border-outline-variant/30 py-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#about">Sharing Platform</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="tutoring-network.html">Tutoring Network</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="https://forms.gle/YvWdpVqEfLssw332A" target="_blank" rel="noopener">Visiting Alumni</a>
+      <a class="block px-5 py-2.5 text-sm text-on-surface-variant dark:text-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all duration-150" href="index.html#about">Special School Program</a>
+    </div>
+  </div>
+
+  <a class="text-on-surface-variant dark:text-surface-variant hover:text-uga-orange transition-colors duration-200 py-2 focus:outline-none" href="index.html#contact">Contact Us</a>
+</nav>
+<div class="flex items-center gap-3 sm:gap-6 shrink-0">
+<button class="material-symbols-outlined text-uga-blue dark:text-inverse-primary hover:text-uga-orange transition-colors">search</button>
+<a href="membership.html" class="bg-uga-blue text-white px-4 py-1.5 sm:px-6 sm:py-2 rounded-full font-label-md hover:bg-uga-orange hover:shadow-lg transition-all duration-300 text-xs sm:text-sm md:text-[14px]">Join Us</a>
+<button id="mobile-menu-btn" class="lg:hidden text-uga-blue hover:text-uga-orange transition-colors">
+  <span class="material-symbols-outlined text-[28px] !block">menu</span>
+</button>
+</div>
+</div>
+</header>
+
+<!-- Mobile Menu Drawer Overlay -->
+<div id="mobile-menu-drawer" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="fixed top-0 right-0 h-full w-[80%] max-w-[360px] bg-surface shadow-2xl p-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex justify-between items-center mb-8">
+        <div class="font-headline-md text-headline-md font-bold text-uga-blue">
+          HKUGACAA
+          <div class="text-xs text-on-surface-variant/80 opacity-85 tracking-tight !font-['Lora',_'Times_New_Roman',_serif] font-bold">港大同學會書院校友會</div>
+        </div>
+        <button id="mobile-menu-close" class="text-on-surface-variant hover:text-uga-orange transition-colors">
+          <span class="material-symbols-outlined text-[28px] !block">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-5 max-h-[60vh] overflow-y-auto pr-2">
+        <a class="text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg" href="index.html">Home</a>
+        
+        <!-- About Us Collapsible -->
+        <details class="group select-none" open>
+          <summary class="flex justify-between items-center text-uga-orange font-bold font-label-md text-lg cursor-pointer list-none">
+            <span>About Us</span>
+            <span class="text-[10px] transition-transform duration-200 group-open:rotate-180">▼</span>
+          </summary>
+          <div class="mt-3 ml-3 flex flex-col gap-3.5 border-l border-outline-variant/40 pl-4 py-1 text-base">
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="preface.html">Preface</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="executive-committee.html">Executive Committee</a>
+            <a class="text-uga-orange font-bold hover:text-uga-orange transition-colors" href="membership.html">Membership</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="year-plan.html">Year Plan and Budget Plan</a>
+          </div>
+        </details>
+
+        <a class="text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg" href="index.html#whats-new">Latest Updates</a>
+
+        <!-- Events Collapsible -->
+        <details class="group select-none">
+          <summary class="flex justify-between items-center text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg cursor-pointer list-none">
+            <span>Events</span>
+            <span class="text-[10px] transition-transform duration-200 group-open:rotate-180">▼</span>
+          </summary>
+          <div class="mt-3 ml-3 flex flex-col gap-3.5 border-l border-outline-variant/40 pl-4 py-1 text-base">
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#events">Alumni Day</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#events">20th Anniversary Open Day</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="agm.html">12th AGM Meeting</a>
+          </div>
+        </details>
+
+        <!-- Initiatives Collapsible -->
+        <details class="group select-none">
+          <summary class="flex justify-between items-center text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg cursor-pointer list-none">
+            <span>Initiatives</span>
+            <span class="text-[10px] transition-transform duration-200 group-open:rotate-180">▼</span>
+          </summary>
+          <div class="mt-3 ml-3 flex flex-col gap-3.5 border-l border-outline-variant/40 pl-4 py-1 text-base">
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#about">Sharing Platform</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="tutoring-network.html">Tutoring Network</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="https://forms.gle/YvWdpVqEfLssw332A" target="_blank" rel="noopener">Visiting Alumni</a>
+            <a class="text-on-surface-variant hover:text-uga-orange transition-colors" href="index.html#about">Special School Program</a>
+          </div>
+        </details>
+
+        <a class="text-on-surface hover:text-uga-orange transition-colors font-label-md text-lg" href="index.html#contact">Contact Us</a>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-4">
+      <a href="membership.html" class="block text-center bg-uga-blue text-white py-3 rounded-full hover:bg-uga-orange hover:shadow-lg transition-all font-label-md">Join Us</a>
+      <div class="text-xs text-on-surface-variant/60 text-center font-sans">
+        © 2024 HKUGA College Alumni Association
+      </div>
+    </div>
+  </div>
+</div>
+<main class="pt-32 pb-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Breadcrumbs -->
+<nav class="mb-12 flex items-center space-x-2 text-on-surface-variant/60 font-label-sm text-label-sm uppercase tracking-widest reveal">
+<a class="hover:text-uga-orange transition-colors" href="index.html">Home</a>
+<span class="">/</span>
+<a class="hover:text-uga-orange transition-colors" href="preface.html">About Us</a>
+<span class="">/</span>
+<span class="text-uga-blue font-bold">Membership</span>
+</nav>
+<!-- Hero Section -->
+<header class="mb-20 reveal">
+<h1 class="font-headline-xl text-3xl sm:text-4xl md:text-headline-xl text-uga-blue mb-4 leading-tight">
+                    Membership
+                </h1>
+<div class="w-24 h-1.5 bg-uga-orange rounded-full"></div>
+</header>
+<!-- Types of Membership Section (Bento Inspired) -->
+<section class="mb-section-gap reveal">
+<div class="flex items-center gap-4 mb-10">
+<span class="material-symbols-outlined text-uga-orange" style="font-variation-settings: &quot;FILL&quot; 1;">workspace_premium</span>
+<h2 class="font-headline-lg text-headline-lg text-uga-blue">Types of Membership</h2>
+</div>
+<div class="asymmetric-grid">
+<!-- Text Content -->
+<div class="space-y-8">
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden group reveal">
+<div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-9xl">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-uga-blue mb-6 flex items-center gap-2">
+                                Graduate Membership
+                                <span class="bg-uga-orange/10 text-uga-orange text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-tighter">Essential</span>
+</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                                All graduates of the college are eligible to apply for the graduate membership and all privileges of the membership will be available to members, including the eligibility to cast one vote at all meetings of the alumni association, and to be a member of any committee of the Alumni Association.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80 border-l-4 border-uga-orange pl-6 italic">
+                                All graduates of the college will be unconditionally regarded as a graduate member upon the payment of the membership fee.
+                            </p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 bg-uga-blue/5 rounded-xl border border-uga-blue/10 flex items-center gap-4 reveal">
+<div class="w-12 h-12 bg-uga-blue rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">how_to_reg</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-uga-blue">Voting Rights</h4>
+<p class="text-xs text-on-surface-variant">Full eligibility to vote</p>
+</div>
+</div>
+<div class="p-6 bg-uga-orange/5 rounded-xl border border-uga-orange/10 flex items-center gap-4 reveal">
+<div class="w-12 h-12 bg-uga-orange rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-uga-orange">Committees</h4>
+<p class="text-xs text-on-surface-variant">Lead &amp; contribute</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Content -->
+<div class="relative h-[500px] rounded-xl overflow-hidden shadow-lg bg-surface-container-low group reveal">
+<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" referrerpolicy="no-referrer" data-alt="A delicate, architectural hand-drawn pencil sketch of HKUGA College campus buildings against a clean white background. The style is artistic and professional, with thin charcoal lines and a sense of depth. Soft morning light creates subtle shadows, emphasizing the academic heritage. The composition is clean with significant negative space, reflecting a corporate modern aesthetic with a creative edge." src="src/assets/images/regenerated_image_1783674782389.png" style="mix-blend-mode: normal;">
+</div>
+</div>
+</section>
+<!-- Registration CTA Section -->
+<section class="relative bg-uga-blue rounded-2xl p-12 md:p-20 overflow-hidden text-white shadow-2xl reveal">
+<!-- Background Decorative Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-2xl text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg mb-6">Registration Form</h2>
+<p class="font-body-lg text-body-lg text-white/80 mb-8 max-w-lg">
+                            Ready to join the community? Become a part of our growing network of alumni and stay connected with your Alma Mater.
+                        </p>
+<div class="flex flex-wrap justify-center md:justify-start gap-4">
+<div class="flex items-center gap-2 text-sm text-white/70">
+<span class="material-symbols-outlined text-uga-orange">check_circle</span>
+                                Access to events
+                            </div>
+<div class="flex items-center gap-2 text-sm text-white/70">
+<span class="material-symbols-outlined text-uga-orange">check_circle</span>
+                                Professional networking
+                            </div>
+<div class="flex items-center gap-2 text-sm text-white/70">
+<span class="material-symbols-outlined text-uga-orange">check_circle</span>
+                                Campus updates
+                            </div>
+</div>
+</div>
+<div class="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end">
+<a href="https://forms.gle/RfqH1Tc56aZzSt5R8" target="_blank" rel="noopener" class="w-full md:w-auto bg-uga-orange hover:bg-uga-orange/90 text-white px-10 py-5 rounded-lg font-headline-sm text-headline-sm transition-all duration-300 text-center transform hover:scale-105 hover:shadow-[0_10px_40px_rgba(240,83,28,0.4)] active:scale-95 flex items-center justify-center gap-3 group">
+                            Official Google Form
+                            <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Interactive Step-by-Step Membership Wizard Modal -->
+<div id="wizard-modal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 flex flex-col max-h-[90vh]">
+    <!-- Modal Header with Step Indicators -->
+    <div class="bg-uga-blue p-6 text-white">
+      <div class="flex justify-between items-center mb-4">
+        <div>
+          <h3 class="font-headline-sm text-lg text-white">HKUGACAA Membership</h3>
+          <p class="text-xs text-white/80 font-sans mt-0.5">Alumni Registration Portal</p>
+        </div>
+        <button onclick="closeWizardModal()" class="text-white/80 hover:text-white transition-colors">
+          <span class="material-symbols-outlined text-[24px] !block">close</span>
+        </button>
+      </div>
+      <!-- Progress Bar & Labels -->
+      <div class="flex items-center gap-2">
+        <div class="flex-1 h-1.5 bg-white/20 rounded-full overflow-hidden">
+          <div id="wizard-progress" class="h-full bg-uga-orange transition-all duration-300 w-1/3"></div>
+        </div>
+        <span id="wizard-step-indicator" class="text-xs font-mono text-white/90">Step 1 of 3</span>
+      </div>
+    </div>
+
+    <!-- Wizard Steps Content -->
+    <div class="p-6 overflow-y-auto flex-1">
+      <form id="wizard-form" onsubmit="handleWizardNext(event)" class="space-y-6">
+        
+        <!-- STEP 1: Personal Details -->
+        <div id="wizard-step-1" class="space-y-4">
+          <h4 class="text-base font-bold text-uga-blue font-sans border-b pb-2">Step 1: Alumni Profile</h4>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Full Name (English)</label>
+            <input required type="text" id="wiz-name" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="e.g. Rachel Tang">
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Graduation Year</label>
+              <input required type="number" min="2006" max="2026" id="wiz-year" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="e.g. 2018">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Class Section</label>
+              <select required id="wiz-class" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20">
+                <option value="A">Class A</option>
+                <option value="B">Class B</option>
+                <option value="C">Class C</option>
+                <option value="D">Class D</option>
+                <option value="E">Class E</option>
+                <option value="F">Class F</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Contact Email</label>
+            <input required type="email" id="wiz-email" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="e.g. rachel@example.com">
+          </div>
+        </div>
+
+        <!-- STEP 2: Network Opt-In & Socials -->
+        <div id="wizard-step-2" class="hidden space-y-4">
+          <h4 class="text-base font-bold text-uga-blue font-sans border-b pb-2">Step 2: Network Alignment</h4>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">LinkedIn Profile (Optional)</label>
+            <input type="url" id="wiz-linkedin" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="https://linkedin.com/in/username">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Tutoring Network Interest</label>
+            <p class="text-xs text-on-surface-variant/70 mb-2 font-sans">Would you like to be considered for our elite Alumni Tutoring Network list to tutor junior college students?</p>
+            <label class="border border-outline-variant rounded-xl p-3 flex items-center gap-3 cursor-pointer hover:bg-surface-container-low transition-colors">
+              <input type="checkbox" id="wiz-tutoring" class="rounded text-uga-blue focus:ring-uga-blue">
+              <span class="text-sm font-sans text-on-surface">Yes, list me as an available alumni tutor</span>
+            </label>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant/80 tracking-wider mb-1.5 font-sans">Current Profession / University Major</label>
+            <input type="text" id="wiz-profession" class="w-full border border-outline-variant rounded-xl px-4 py-2.5 text-sm font-sans focus:border-uga-blue focus:ring-uga-blue/20" placeholder="e.g. Medical Student at HKU / Software Architect">
+          </div>
+        </div>
+
+        <!-- STEP 3: Complete & Card Generation Preview -->
+        <div id="wizard-step-3" class="hidden space-y-4">
+          <h4 class="text-base font-bold text-uga-blue font-sans border-b pb-2">Step 3: Registration Confirmed!</h4>
+          <p class="text-xs text-on-surface-variant font-sans">Thank you! Your membership application has been approved instantly. Here is your official **HKUGACAA Digital Alumni Card**:</p>
+          
+          <!-- Designed Card Mockup -->
+          <div class="relative bg-gradient-to-br from-uga-blue to-indigo-950 p-6 rounded-2xl text-white shadow-xl overflow-hidden border border-white/10 select-none">
+            <!-- Diagonal stripes -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-400 to-transparent"></div>
+            
+            <div class="relative z-10 flex justify-between items-start mb-6">
+              <div>
+                <span class="text-xs font-bold font-sans uppercase tracking-widest text-uga-orange">HKUGACAA</span>
+                <p class="text-[9px] text-white/60 font-sans tracking-tight">ALUMNI ASSOCIATION</p>
+              </div>
+              <span class="material-symbols-outlined text-amber-400 text-[28px] !block">workspace_premium</span>
+            </div>
+
+            <div class="relative z-10 space-y-4">
+              <div>
+                <p class="text-[9px] text-white/50 font-sans uppercase tracking-wider">Member Name</p>
+                <h4 id="card-holder-name" class="font-headline-md text-lg text-white">Rachel Tang</h4>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <p class="text-[9px] text-white/50 font-sans uppercase tracking-wider">Alumni ID</p>
+                  <p id="card-member-id" class="font-mono text-sm font-bold text-amber-300">M-2024-4903</p>
+                </div>
+                <div>
+                  <p class="text-[9px] text-white/50 font-sans uppercase tracking-wider">Class Year</p>
+                  <p id="card-member-year" class="font-mono text-sm">Class of 2018</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative z-10 border-t border-white/10 mt-5 pt-3 flex justify-between items-center">
+              <span class="text-[9px] text-white/40 font-mono">STATUS: LIFETIME GRADUATE MEMBER</span>
+              <span class="text-[9px] text-emerald-400 font-bold font-sans flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> ACTIVE
+              </span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button type="button" onclick="downloadMembershipCard()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-label-md py-3 rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">download</span>
+              Simulate Download PDF Pass
+            </button>
+          </div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="pt-4 flex gap-3 border-t">
+          <button type="button" id="wiz-prev-btn" onclick="handleWizardPrev()" class="hidden flex-1 bg-surface-container-high/40 hover:bg-surface-container-high/70 text-on-surface-variant font-label-md py-3 rounded-xl text-sm transition-colors">Previous</button>
+          <button type="submit" id="wiz-next-btn" class="flex-1 bg-uga-blue hover:bg-uga-orange text-white font-label-md py-3 rounded-xl text-sm transition-all shadow-md">Next Step</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div id="toast-notification" class="fixed bottom-5 right-5 z-50 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300 bg-slate-900 text-white px-6 py-4 rounded-xl flex items-center gap-3 shadow-2xl border border-slate-800">
+  <span id="toast-icon" class="material-symbols-outlined text-emerald-400">check_circle</span>
+  <div>
+    <p class="font-semibold text-sm font-sans" id="toast-title">Registered Successfully</p>
+    <p class="text-xs text-slate-400 font-sans mt-0.5" id="toast-desc">Confirmation email has been sent!</p>
+  </div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-dark-charcoal border-t border-outline-variant dark:border-outline py-12 reveal">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto gap-8">
+<div class="max-w-sm">
+<h2 class="font-headline-sm text-headline-sm font-bold text-uga-blue dark:text-inverse-primary mb-4">HKUGACAA</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                    Connecting generations of HKUGAC alumni through community engagement and lifelong excellence.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-uga-blue hover:text-white transition-all text-on-surface-variant" href="index.html#contact">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-uga-blue hover:text-white transition-all text-on-surface-variant" href="index.html#contact">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-6">
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-uga-orange">Links</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-uga-blue transition-all underline decoration-transparent hover:decoration-uga-blue" href="privacy.html">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-uga-blue transition-all underline decoration-transparent hover:decoration-uga-blue" href="terms.html">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-uga-orange">Contact</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-uga-blue transition-all underline decoration-transparent hover:decoration-uga-blue" href="index.html#contact">Contact Us</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-uga-blue transition-all underline decoration-transparent hover:decoration-uga-blue" href="https://www.hkugac.edu.hk/" target="_blank" rel="noopener">HKUGA College</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-12 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant/60">© 2024 HKUGA College Alumni Association. All rights reserved.</p>
+<p class="font-body-sm text-body-sm text-uga-blue/40 italic">Virtue, Knowledge, Culture &amp; Physicality</p>
+</div>
+</footer>
+<script>
+    // Wizard Form State Management
+    let currentStep = 1;
+
+    function openWizardModal() {
+        const modal = document.getElementById('wizard-modal');
+        if (modal) {
+            currentStep = 1;
+            updateWizardUI();
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100');
+            modal.querySelector('div').classList.remove('scale-95');
+            modal.querySelector('div').classList.add('scale-100');
+        }
+    }
+
+    function closeWizardModal() {
+        const modal = document.getElementById('wizard-modal');
+        if (modal) {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modal.classList.remove('opacity-100');
+            modal.querySelector('div').classList.add('scale-95');
+            modal.querySelector('div').classList.remove('scale-100');
+        }
+    }
+
+    function handleWizardPrev() {
+        if (currentStep > 1) {
+            currentStep--;
+            updateWizardUI();
+        }
+    }
+
+    function handleWizardNext(event) {
+        event.preventDefault();
+        
+        if (currentStep < 3) {
+            // If going from Step 2 to Step 3, populate the membership card
+            if (currentStep === 2) {
+                generateMembershipCard();
+            }
+            currentStep++;
+            updateWizardUI();
+        } else {
+            // Already completed, just close
+            closeWizardModal();
+        }
+    }
+
+    function updateWizardUI() {
+        const step1 = document.getElementById('wizard-step-1');
+        const step2 = document.getElementById('wizard-step-2');
+        const step3 = document.getElementById('wizard-step-3');
+        const prevBtn = document.getElementById('wiz-prev-btn');
+        const nextBtn = document.getElementById('wiz-next-btn');
+        const indicator = document.getElementById('wizard-step-indicator');
+        const progress = document.getElementById('wizard-progress');
+
+        // Hide all steps first
+        step1.classList.add('hidden');
+        step2.classList.add('hidden');
+        step3.classList.add('hidden');
+
+        if (currentStep === 1) {
+            step1.classList.remove('hidden');
+            prevBtn.classList.add('hidden');
+            nextBtn.textContent = "Next Step";
+            indicator.textContent = "Step 1 of 3";
+            progress.style.width = "33.33%";
+        } else if (currentStep === 2) {
+            step2.classList.remove('hidden');
+            prevBtn.classList.remove('hidden');
+            nextBtn.textContent = "Complete Registration";
+            indicator.textContent = "Step 2 of 3";
+            progress.style.width = "66.66%";
+        } else if (currentStep === 3) {
+            step3.classList.remove('hidden');
+            prevBtn.classList.add('hidden');
+            nextBtn.textContent = "Finish & Close";
+            indicator.textContent = "Step 3 of 3";
+            progress.style.width = "100%";
+        }
+    }
+
+    function generateMembershipCard() {
+        const nameVal = document.getElementById('wiz-name').value || 'Rachel Tang';
+        const yearVal = document.getElementById('wiz-year').value || '2024';
+        const classVal = document.getElementById('wiz-class').value || 'A';
+        
+        // Random 4-digit ID number
+        const randomID = Math.floor(1000 + Math.random() * 9000);
+        const memberID = `M-${yearVal}-${randomID}`;
+
+        document.getElementById('card-holder-name').textContent = nameVal;
+        document.getElementById('card-member-id').textContent = memberID;
+        document.getElementById('card-member-year').textContent = `Class of ${yearVal} (6${classVal})`;
+    }
+
+    function downloadMembershipCard() {
+        const toast = document.getElementById('toast-notification');
+        const icon = document.getElementById('toast-icon');
+        const title = document.getElementById('toast-title');
+        const desc = document.getElementById('toast-desc');
+        
+        if (toast && icon && title && desc) {
+            icon.textContent = "download_done";
+            icon.className = "material-symbols-outlined text-emerald-400";
+            title.textContent = "Membership Card Saved";
+            desc.textContent = "HKUGACAA_Card_Pass.pdf downloaded successfully!";
+            
+            toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 3000);
+        }
+    }
+
+    // Mobile Menu Drawer Toggle Logic
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileClose = document.getElementById('mobile-menu-close');
+    const mobileDrawer = document.getElementById('mobile-menu-drawer');
+    const mobileDrawerContainer = mobileDrawer ? mobileDrawer.querySelector('div') : null;
+
+    if (mobileBtn && mobileDrawer && mobileDrawerContainer) {
+        const openMobileMenu = () => {
+            mobileDrawer.classList.remove('pointer-events-none', 'opacity-0');
+            mobileDrawer.classList.add('opacity-100');
+            mobileDrawerContainer.classList.remove('translate-x-full');
+        };
+
+        const closeMobileMenu = () => {
+            mobileDrawer.classList.add('pointer-events-none', 'opacity-0');
+            mobileDrawer.classList.remove('opacity-100');
+            mobileDrawerContainer.classList.add('translate-x-full');
+        };
+
+        mobileBtn.addEventListener('click', openMobileMenu);
+        mobileClose.addEventListener('click', closeMobileMenu);
+        mobileDrawer.addEventListener('click', (e) => {
+            if (e.target === mobileDrawer) closeMobileMenu();
+        });
+    }
+
+    // Simple scroll effect for navbar
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) {
+            header.classList.add('shadow-md');
+            header.classList.remove('shadow-sm');
+        } else {
+            header.classList.add('shadow-sm');
+            header.classList.remove('shadow-md');
+        }
+    });
+
+    // IntersectionObserver for scroll animations
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observerOptions = {
+        root: null,
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver(revealCallback, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.reveal').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('active');
+            }
+        });
+    });
+
+    // Page fade-out transition on link clicks
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link && link.href) {
+        const currentUrl = new URL(window.location.href);
+        const targetUrl = new URL(link.href, window.location.href);
+        const isInternal = targetUrl.origin === currentUrl.origin;
+        const isSamePageHash = targetUrl.pathname === currentUrl.pathname && link.hash;
+        const isBlank = link.target === '_blank';
+        const isAction = link.href.startsWith('mailto:') || link.href.startsWith('tel:') || link.href.startsWith('javascript:');
+
+        if (isInternal && !isSamePageHash && !isBlank && !isAction) {
+          e.preventDefault();
+          let overlay = document.getElementById('page-transition-overlay');
+          if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'page-transition-overlay';
+            overlay.className = 'fixed inset-0 bg-surface dark:bg-dark-charcoal z-[9999] pointer-events-none transition-opacity duration-300 opacity-0';
+            document.body.appendChild(overlay);
+          }
+          overlay.offsetWidth;
+          overlay.classList.remove('opacity-0');
+          overlay.classList.add('opacity-100');
+          setTimeout(() => {
+            window.location.href = link.href;
+          }, 300);
+        }
+      }
+    });
+</script>
+</body></html>
