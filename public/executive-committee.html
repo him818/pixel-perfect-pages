@@ -367,186 +367,204 @@
 <!-- Intro Section -->
 <section class="mb-20 max-w-3xl reveal">
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-  The HKUGA College Alumni Association Executive Committee manages the daily operations, plans major activities, and executes strategies to foster robust connections among graduates, students, the school administration, and parent-teacher organizations. The current Executive Committee serving the 2024–2026 term is dedicated to the core values of service, collaboration, and lifelong development.
+  HKUGAC Alumni Association Executive Committee, 2024–2026.
 </p>
 </section>
 
-<!-- Filter Tabs -->
-<div class="flex flex-wrap gap-2 mb-12 border-b border-outline-variant/30 pb-4 reveal">
-  <button id="filter-all" onclick="filterCommittee('all')" class="px-5 py-2 rounded-full font-label-md text-sm bg-uga-blue text-white shadow-sm transition-all">All Members</button>
-  <button id="filter-bearers" onclick="filterCommittee('bearers')" class="px-5 py-2 rounded-full font-label-md text-sm text-on-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all">Office Bearers</button>
-  <button id="filter-portfolios" onclick="filterCommittee('portfolios')" class="px-5 py-2 rounded-full font-label-md text-sm text-on-surface-variant hover:bg-uga-orange/10 hover:text-uga-orange transition-all">Portfolio Leaders</button>
-</div>
+<!-- Executive Committee Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-16">
 
-<!-- Committee Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-20">
-  
   <!-- President -->
-  <div class="committee-card bearer-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.05s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-orange/10 rounded-xl flex items-center justify-center text-uga-orange">
-          <span class="material-symbols-outlined text-[28px]">shield_person</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-orange/10 text-uga-orange px-3 py-1 rounded-full font-sans">Class of 2014</span>
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.05s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-orange/10 rounded-xl flex items-center justify-center text-uga-orange">
+        <span class="material-symbols-outlined text-[28px]">shield_person</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Adrian Wong</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-uga-orange/80 mb-4 font-sans">President</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Leads the strategic vision, school management collaboration, and coordinates general operations to drive the Alumni Association's growth.
-      </p>
+      <span class="text-xs font-semibold bg-uga-orange/10 text-uga-orange px-3 py-1 rounded-full font-sans">Class of 2019</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">Strategic Leadership</span>
-      <a href="mailto:president@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
-    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Tim Lam</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-uga-orange/80 font-sans">President</p>
   </div>
 
   <!-- Vice President -->
-  <div class="committee-card bearer-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.1s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
-          <span class="material-symbols-outlined text-[28px]">diversity_3</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2016</span>
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.1s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">diversity_3</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Chloe Lam</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 mb-4 font-sans">Vice President</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Focuses on external liaisons, partnerships, and supports the President in running executive operations and steering projects.
-      </p>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2013</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">External Relations</span>
-      <a href="mailto:vp@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
-    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Eunice Li</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Vice President</p>
   </div>
 
-  <!-- Hon. Secretary -->
-  <div class="committee-card bearer-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.15s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
-          <span class="material-symbols-outlined text-[28px]">edit_note</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2017</span>
+  <!-- Secretary -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.15s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">edit_note</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Marcus Chan</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 mb-4 font-sans">Hon. Secretary</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Manages the administrative records, documents formal meeting minutes, handles correspondence, and maintains membership records.
-      </p>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2016</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">Administration</span>
-      <a href="mailto:secretary@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
-    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Heidi Chan</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Secretary</p>
   </div>
 
-  <!-- Hon. Treasurer -->
-  <div class="committee-card bearer-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.2s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
-          <span class="material-symbols-outlined text-[28px]">account_balance_wallet</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2015</span>
+  <!-- Treasurer -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.2s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">account_balance_wallet</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Tiffany Ng</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 mb-4 font-sans">Hon. Treasurer</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Oversees financial health, processes budgets, maintains books of account, and prepares the annual auditing and financial statements.
-      </p>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">Finance &amp; Audit</span>
-      <a href="mailto:treasurer@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
-    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Lambert Lau</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Treasurer</p>
   </div>
 
-  <!-- Mentorship Liaison -->
-  <div class="committee-card portfolio-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.25s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
-          <span class="material-symbols-outlined text-[28px]">school</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2017</span>
+  <!-- Internal Communication Officer -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.25s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">forum</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Stephanie Ho</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 mb-4 font-sans">Mentorship &amp; Tutoring</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Leads and coordinates the Alumni Tutoring Network, organizes university pathway sharing panels, and supports student mentoring initiatives.
-      </p>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">Alumni Tutoring</span>
-      <a href="mailto:tutoring@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
-    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Sophia Chong</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Internal Communication Officer</p>
   </div>
 
-  <!-- Events Coordinator -->
-  <div class="committee-card portfolio-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.3s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
-          <span class="material-symbols-outlined text-[28px]">celebration</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2019</span>
+  <!-- External Communication Officer -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.3s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">campaign</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Matthew Tsang</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 mb-4 font-sans">Events &amp; Communities</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Coordinates social gatherings, sports events, annual dinners, and major structural events like Alumni Day and anniversary reunions.
-      </p>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">Event Logistics</span>
-      <a href="mailto:events@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
-    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Kathryn Ty</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">External Communication Officer</p>
   </div>
 
-  <!-- PR Liaison -->
-  <div class="committee-card portfolio-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.35s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
-          <span class="material-symbols-outlined text-[28px]">campaign</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2016</span>
+  <!-- Primary School Communication Officer -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.35s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">school</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Janice Cheung</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 mb-4 font-sans">PR &amp; Communication</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Manages structural news updates, social media channels, official website releases, brand image, and coordinated school PR campaigns.
-      </p>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2014</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">Communications</span>
-      <a href="mailto:pr@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
-    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Oscar Chow</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Primary School Communication Officer</p>
   </div>
 
-  <!-- IT Officer -->
-  <div class="committee-card portfolio-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.4s;">
-    <div>
-      <div class="flex justify-between items-start mb-6">
-        <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
-          <span class="material-symbols-outlined text-[28px]">terminal</span>
-        </div>
-        <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2018</span>
+  <!-- Exco Member -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.4s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">groups</span>
       </div>
-      <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Derek Lau</h3>
-      <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 mb-4 font-sans">IT &amp; Digital Platforms</p>
-      <p class="font-body-sm text-body-sm text-on-surface-variant/90 leading-relaxed mb-6 font-sans">
-        Drives development and maintenance of the AA official portal, coordinates cloud databases, membership records system, and core tech stacks.
-      </p>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2016</span>
     </div>
-    <div class="border-t border-outline-variant/20 pt-4 flex items-center justify-between">
-      <span class="text-xs text-on-surface-variant/60 font-sans">Digital Infrastructure</span>
-      <a href="mailto:it@hkugacaa.org.hk" class="text-uga-blue hover:text-uga-orange transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Jacqueline Lam</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Exco Member</p>
+  </div>
+
+</div>
+
+<!-- Subcommittee Heading -->
+<header class="relative mb-10 reveal">
+  <div class="flex items-start">
+    <div class="w-2 h-10 bg-uga-orange mr-6 mt-1"></div>
+    <h2 class="font-headline-md text-2xl md:text-3xl text-uga-blue tracking-tight font-bold">Subcommittee 2024–2026</h2>
+  </div>
+</header>
+
+<!-- Subcommittee Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-20">
+
+  <!-- Subcommittee Member -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.05s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">person</span>
+      </div>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
     </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Jamie Li</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Subcommittee Member</p>
+  </div>
+
+  <!-- Subcommittee Member -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.1s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">person</span>
+      </div>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
+    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Eunice Wong</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Subcommittee Member</p>
+  </div>
+
+  <!-- Subcommittee Member -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.15s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">person</span>
+      </div>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
+    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Justin Sae-Ung</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Subcommittee Member</p>
+  </div>
+
+  <!-- Subcommittee Member -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.2s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">person</span>
+      </div>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
+    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Lincoln Siu</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Subcommittee Member</p>
+  </div>
+
+  <!-- Subcommittee Member -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.25s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">person</span>
+      </div>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2024</span>
+    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Marco Law</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Subcommittee Member</p>
+  </div>
+
+  <!-- Legal Advisor -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.3s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">gavel</span>
+      </div>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2021</span>
+    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Perry Wong</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Legal Advisor</p>
+  </div>
+
+  <!-- Financial Advisor -->
+  <div class="committee-card bg-white rounded-2xl border border-outline-variant/30 p-6 flex flex-col hover:border-uga-orange hover:shadow-xl transition-all duration-300 reveal group" style="transition-delay: 0.35s;">
+    <div class="flex justify-between items-start mb-6">
+      <div class="w-12 h-12 bg-uga-blue/5 rounded-xl flex items-center justify-center text-uga-blue">
+        <span class="material-symbols-outlined text-[28px]">savings</span>
+      </div>
+      <span class="text-xs font-semibold bg-uga-blue/10 text-uga-blue px-3 py-1 rounded-full font-sans">Class of 2012</span>
+    </div>
+    <h3 class="font-headline-sm text-xl text-uga-blue group-hover:text-uga-orange transition-colors mb-1 font-bold">Linda Yue</h3>
+    <p class="text-xs uppercase tracking-wider font-semibold text-on-surface-variant/70 font-sans">Financial Advisor</p>
   </div>
 
 </div>
