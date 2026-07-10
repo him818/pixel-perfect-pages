@@ -77,29 +77,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "HKUGACAA — HKUGA College Alumni Association" },
+      { title: "HKUGA College Alumni Association" },
       {
         name: "description",
         content:
           "HKUGA College Alumni Association (港大同學會書院校友會) — connecting generations of HKUGAC & HKUGAPS graduates through community, service, and lifelong learning since 2012.",
       },
       { name: "author", content: "HKUGACAA" },
-      { property: "og:title", content: "HKUGACAA — HKUGA College Alumni Association" },
+      { property: "og:title", content: "HKUGA College Alumni Association" },
       {
         property: "og:description",
         content:
-          "HKUGA College Alumni Association (港大同學會書院校友會) — connecting generations of graduates since 2012.",
+          "HKUGA College Alumni Association (港大同學會書院校友會) — connecting generations of HKUGAC & HKUGAPS graduates through community, service, and lifelong learning since 2012.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "HKUGA College Alumni Association" },
+      { name: "twitter:description", content: "HKUGA College Alumni Association (港大同學會書院校友會) — connecting generations of HKUGAC & HKUGAPS graduates through community, service, and lifelong learning since 2012." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fed427c9-2420-488d-ae9a-1cfe6570d06f/id-preview-c7246a09--ac288ee7-2c3c-488d-9b44-8ca8fbe6cf8c.lovable.app-1783699766912.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fed427c9-2420-488d-ae9a-1cfe6570d06f/id-preview-c7246a09--ac288ee7-2c3c-488d-9b44-8ca8fbe6cf8c.lovable.app-1783699766912.png" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
